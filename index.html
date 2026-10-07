@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ROSHNI AHIRWAR | Luxury Fashion House</title>
+  <link rel="stylesheet" href="style.css">
+  <!-- Fonts & Icons -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;700&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+
+  <!-- टॉप टिकर -->
+  <div class="top-announcement">
+    <span>✦ COMPLIMENTARY PAN-INDIA EXPRESS SHIPPING ON ALL ORDERS ✦ USE CODE: <strong>LUXE10</strong></span>
+  </div>
+
+  <!-- नेविगेशन हेडर -->
+  <header class="navbar">
+    <div class="nav-left">
+      <button class="menu-btn"><i class="fa-solid fa-bars-staggered"></i></button>
+      <nav class="nav-links">
+        <a href="#new" class="active">NEW IN</a>
+        <a href="#ready">READY TO WEAR</a>
+        <a href="#couture">COUTURE</a>
+        <a href="#festive">FESTIVE EDIT</a>
+      </nav>
+    </div>
+
+    <div class="logo-area">
+      <a href="#" class="brand-logo">ROSHNI AHIRWAR</a>
+      <span class="sub-logo">NEW DELHI • PARIS</span>
+    </div>
+
+    <div class="nav-right">
+      <div class="search-box">
+        <i class="fa-solid fa-magnifying-glass"></i>
+        <input type="text" placeholder="Search curated luxury...">
+      </div>
+      <div class="action-icons">
+        <button class="icon-btn" title="Wishlist"><i class="fa-regular fa-heart"></i></button>
+        <button class="icon-btn bag-btn" id="openBagBtn">
+          <i class="fa-solid fa-bag-shopping"></i>
+          <span class="bag-badge" id="cartCount">0</span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- हीरो लक्ज़री बैनर -->
+  <section class="hero-section">
+    <div class="hero-overlay"></div>
+    <div class="hero-content">
+      <span class="editorial-tag">AUTUMN / FESTIVE 2026</span>
+      <h1>THE REGAL DRAPE</h1>
+      <p>Hand-spun silks meets contemporary silhouettes, designed for true timeless elegance.</p>
+      <div class="hero-actions">
+        <a href="#collection" class="btn-luxe">EXPLORE COLLECTION</a>
+        <a href="#couture" class="btn-outline">VIEW RUNWAY EDIT</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- क्यूरेटेड कैटेगरी हाईलाइट्स -->
+  <section class="story-strips">
+    <div class="story-card">
+      <img src="https://images.unsplash.com/photo-1610030469983-98e550d6193c?w=700" alt="Heirloom Sarees">
+      <div class="story-meta">
+        <h3>HEIRLOOM SILKS</h3>
+        <span>SHOP NOW →</span>
+      </div>
+    </div>
+    <div class="story-card">
+      <img src="https://images.unsplash.com/photo-1583391733956-3750e0ff4e8b?w=700" alt="Embroidered Kurtas">
+      <div class="story-meta">
+        <h3>CONTEMPORARY SUITS</h3>
+        <span>SHOP NOW →</span>
+      </div>
+    </div>
+    <div class="story-card">
+      <img src="https://images.unsplash.com/photo-1539109136881-3be0616acf4b?w=700" alt="Modern Co-ords">
+      <div class="story-meta">
+        <h3>MONOCHROME SETS</h3>
+        <span>SHOP NOW →</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- प्रोडक्ट्स गैलरी -->
+  <section class="collection-container" id="collection">
+    <div class="collection-header">
+      <div>
+        <span class="small-tag">SIGNATURE PIECES</span>
+        <h2>CURATED ESSENTIALS</h2>
+      </div>
+      <div class="filter-pills">
+        <button class="pill active">ALL</button>
+        <button class="pill">BESTSELLERS</button>
+        <button class="pill">COUTURE</button>
+        <button class="pill">LIMITED EDITION</button>
+      </div>
+    </div>
+
+    <!-- ग्रिड -->
+    <div class="grid-wrap">
+
+      <!-- प्रोडक्ट 1 -->
+      <div class="card-item" data-id="1" data-name="Golden Zari Silk Ensemble" data-price="2899">
+        <div class="card-visual">
+          <span class="tag-label">Exclusive</span>
+          <img src="https://images.unsplash.com/photo-1583391733956-3750e0ff4e8b?w=600" alt="Silk Suit">
+          <button class="wishlist-float"><i class="fa-regular fa-heart"></i></button>
+        </div>
+        <div class="card-body">
+          <div class="rating-strip">★ 4.9 <span>(320 reviews)</span></div>
+          <h4>Golden Zari Silk Ensemble</h4>
+          <p class="desc">Hand-embroidered chanderi tissue with organza dupatta.</p>
+          <div class="price-box">
+            <span class="current">₹2,899</span>
+            <span class="cut">₹5,499</span>
+            <span class="off">47% OFF</span>
+          </div>
+
+          <!-- साइज़ चयन -->
+          <div class="size-selector">
+            <span class="size-label">Select Size:</span>
+            <div class="sizes">
+              <button class="sz-btn" onclick="selectSize(this)">XS</button>
+              <button class="sz-btn active" onclick="selectSize(this)">S</button>
+              <button class="sz-btn" onclick="selectSize(this)">M</button>
+              <button class="sz-btn" onclick="selectSize(this)">L</button>
+              <button
