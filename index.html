@@ -3,90 +3,102 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>सरकारी रिजल्ट | Sarkari Result</title>
-  <style>
-    * { margin: 0; padding: 0; box-sizing: border-box; font-family: Arial, sans-serif; }
-    body { background-color: #f4f4f4; color: #222; }
-    .header { background-color: #ab1717; color: #fff; text-align: center; padding: 15px 10px; }
-    .header h1 { font-size: 24px; font-weight: bold; }
-    .header p { font-size: 13px; margin-top: 4px; }
-    .navbar { background-color: #000; display: flex; justify-content: center; overflow-x: auto; white-space: nowrap; }
-    .navbar a { color: #fff; text-decoration: none; padding: 10px 14px; font-size: 13px; font-weight: bold; }
-    .quick-alerts { max-width: 900px; margin: 12px auto; padding: 0 10px; display: flex; flex-direction: column; gap: 8px; }
-    .btn-alert { display: block; padding: 10px; border-radius: 4px; color: #fff; text-decoration: none; font-weight: bold; text-align: center; font-size: 13px; }
-    .bg-red { background: #d32f2f; }
-    .bg-blue { background: #1976d2; }
-    .bg-orange { background: #f57c00; }
-    .bg-green { background: #388e3c; }
-    .main-container { max-width: 900px; margin: 15px auto; padding: 0 10px; display: grid; grid-template-columns: 1fr; gap: 15px; }
-    @media (min-width: 768px) { .main-container { grid-template-columns: repeat(3, 1fr); } }
-    .box { background: #fff; border: 1px solid #ddd; }
-    .box-header { padding: 8px; color: #fff; font-size: 15px; font-weight: bold; text-align: center; }
-    .header-result { background-color: #c62828; }
-    .header-admit { background-color: #1565c0; }
-    .header-jobs { background-color: #2e7d32; }
-    .link-list { list-style: none; padding: 10px; margin: 0; }
-    .link-list li { margin-bottom: 10px; font-size: 13px; line-height: 1.4; }
-    .link-list a { color: #0d47a1; text-decoration: none; font-weight: 500; }
-    .tag-new { color: red; font-size: 10px; font-weight: bold; }
-    .footer { background-color: #222; color: #bbb; text-align: center; padding: 15px; font-size: 12px; margin-top: 25px; }
-  </style>
+  <title>Roshni Ahirwar | Fashion & Boutique</title>
+  <link rel="stylesheet" href="style.css">
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
 </head>
 <body>
 
-  <header class="header">
-    <h1>SARKARI RESULT</h1>
-    <p>All Govt Exam Updates & Results</p>
+  <!-- हेडर और नेविगेशन -->
+  <header class="navbar">
+    <div class="logo">ROSHNI <span>AHIRWAR</span></div>
+    <nav>
+      <a href="#home">Home</a>
+      <a href="#products">Collection</a>
+      <a href="#about">About</a>
+      <a href="#contact">Contact</a>
+    </nav>
   </header>
 
-  <nav class="navbar">
-    <a href="index.html">Home</a>
-    <a href="#jobs">Latest Jobs</a>
-    <a href="#results">Results</a>
-    <a href="#admit">Admit Card</a>
-  </nav>
-
-  <section class="quick-alerts">
-    <a href="job.html" class="btn-alert bg-red">Railway RRB Apply Online</a>
-    <a href="#" class="btn-alert bg-blue">SSC CGL Tier 1 Result</a>
-    <a href="#" class="btn-alert bg-orange">UPSSSC PET Answer Key</a>
-    <a href="#" class="btn-alert bg-green">UP Police SI Admit Card</a>
+  <!-- हीरो बैनर -->
+  <section class="hero" id="home">
+    <div class="hero-content">
+      <span class="tagline">EXCLUSIVE DESIGNER COLLECTION</span>
+      <h1>ELEGANCE IN EVERY THREAD</h1>
+      <p>प्रीमियम स्टाइल, ट्रेंडी आउटफिट्स और शानदार फैब्रिक — सिर्फ आपके लिए।</p>
+      <a href="#products" class="btn btn-primary">कलेक्शन देखें</a>
+    </div>
   </section>
 
-  <main class="main-container">
-    <section class="box" id="results">
-      <h2 class="box-header header-result">Result</h2>
-      <ul class="link-list">
-        <li><a href="#">SSC CGL Tier 1 Result</a></li>
-        <li><a href="#">Railway Group D Final Result</a></li>
-        <li><a href="#">UP Police SI Result & Cutoff</a></li>
-        <li><a href="#">UPSC CSE Prelims Result</a></li>
-      </ul>
-    </section>
+  <!-- प्रोडक्ट्स सेक्शन -->
+  <section class="products-section" id="products">
+    <h2 class="section-title">Trending <span>Outfits</span></h2>
+    <div class="product-grid">
 
-    <section class="box" id="admit">
-      <h2 class="box-header header-admit">Admit Card</h2>
-      <ul class="link-list">
-        <li><a href="#">UP Police Constable Admit Card</a></li>
-        <li><a href="#">Railway RRB NTPC Hall Ticket</a></li>
-        <li><a href="#">SSC CHSL Tier 2 Admit Card</a></li>
-        <li><a href="#">CTET Exam Admit Card</a></li>
-      </ul>
-    </section>
+      <!-- प्रोडक्ट 1 -->
+      <div class="product-card">
+        <div class="product-img">
+          <img src="https://images.unsplash.com/photo-1515886657613-9f3515b0c78f?w=500" alt="Designer Kurti Set">
+          <span class="badge">Hot</span>
+        </div>
+        <div class="product-info">
+          <h3>Designer Kurti Set</h3>
+          <p class="price">₹1,199 <span class="old-price">₹1,999</span></p>
+          <a href="https://wa.me/91XXXXXXXXXX?text=Hello%20Roshni%20Ahirwar,%20I%20want%20to%20order%20Designer%20Kurti%20Set" target="_blank" class="btn btn-buy">Order on WhatsApp</a>
+        </div>
+      </div>
 
-    <section class="box" id="jobs">
-      <h2 class="box-header header-jobs">Latest Jobs</h2>
-      <ul class="link-list">
-        <li><a href="job.html">Railway Technician Form <span class="tag-new">New</span></a></li>
-        <li><a href="#">SSC GD Constable 2026 Online Form</a></li>
-        <li><a href="#">UP Police Constable 2026</a></li>
-        <li><a href="#">India Post GDS Recruitment</a></li>
-      </ul>
-    </section>
-  </main>
+      <!-- प्रोडक्ट 2 -->
+      <div class="product-card">
+        <div class="product-img">
+          <img src="https://images.unsplash.com/photo-1529139574466-a303027c1d8b?w=500" alt="Casual Chic Top">
+          <span class="badge">Trending</span>
+        </div>
+        <div class="product-info">
+          <h3>Casual Chic Top</h3>
+          <p class="price">₹699 <span class="old-price">₹1,299</span></p>
+          <a href="https://wa.me/91XXXXXXXXXX?text=Hello%20Roshni%20Ahirwar,%20I%20want%20to%20order%20Casual%20Chic%20Top" target="_blank" class="btn btn-buy">Order on WhatsApp</a>
+        </div>
+      </div>
 
-  <footer class="footer">
-    <p>© 2026 Sarkari Result. All Rights Reserved.</p>
+      <!-- प्रोडक्ट 3 -->
+      <div class="product-card">
+        <div class="product-img">
+          <img src="https://images.unsplash.com/photo-1539109136881-3be0616acf4b?w=500" alt="Premium Party Wear">
+        </div>
+        <div class="product-info">
+          <h3>Premium Party Wear</h3>
+          <p class="price">₹1,599 <span class="old-price">₹2,499</span></p>
+          <a href="https://wa.me/91XXXXXXXXXX?text=Hello%20Roshni%20Ahirwar,%20I%20want%20to%20order%20Premium%20Party%20Wear" target="_blank" class="btn btn-buy">Order on WhatsApp</a>
+        </div>
+      </div>
+
+      <!-- प्रोडक्ट 4 -->
+      <div class="product-card">
+        <div class="product-img">
+          <img src="https://images.unsplash.com/photo-1509631179647-0177331693ae?w=500" alt="Floral Summer Dress">
+          <span class="badge">Sale</span>
+        </div>
+        <div class="product-info">
+          <h3>Floral Summer Dress</h3>
+          <p class="price">₹899 <span class="old-price">₹1,599</span></p>
+          <a href="https://wa.me/91XXXXXXXXXX?text=Hello%20Roshni%20Ahirwar,%20I%20want%20to%20order%20Floral%20Summer%20Dress" target="_blank" class="btn btn-buy">Order on WhatsApp</a>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- फुटर -->
+  <footer id="contact">
+    <div class="footer-content">
+      <div class="footer-logo">ROSHNI <span>AHIRWAR</span></div>
+      <p>फैशन, खूबसूरती और परफेक्शन का सही मेल।</p>
+      <p class="copyright">© 2026 Roshni Ahirwar. All Rights Reserved.</p>
+    </div>
   </footer>
 
 </body>
